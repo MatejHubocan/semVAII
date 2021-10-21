@@ -4,7 +4,7 @@ body {
     background-image: url("https://th.bing.com/th/id/R.d5fa785e50cdcb60f87c1257f8afd7f6?rik=tUbG49tiKnMX7g&pid=ImgRaw&r=0");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center, center;
+    #background-position: center, center;
 }
 
 .menu {
@@ -41,7 +41,6 @@ body {
 }
 
 .overhead {
-    size: 300px;
     #max-width: fit-content;
     background-color: #363f44;
     font-size: large;
@@ -81,6 +80,7 @@ body {
 .loginWindow {
     margin: 20px auto;
     width: 60%;
+    max-width: 500px;
     background-color: #735b5b;
     padding: 5%;
     opacity: 0.9;
@@ -119,6 +119,7 @@ body {
 }
 
 .username, .password {
+
     display: block;
     border-radius: 30px;
     border: 1px solid red;
@@ -145,6 +146,7 @@ body {
 
 .foot{
     width: 100%;
+    max-height: 50px;
     background-color: #363f44;
     color: #ffffff;
     text-align: center;
