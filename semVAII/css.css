@@ -7,34 +7,40 @@ body {
     background-position: center, center;
 }
 
-.topnav {
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     overflow: hidden;
-    background-color: transparent;
-    direction: rtl;
 }
 
-.topnav a {
+.menu a {
     background-color: #949494;
-    float: right;
-    display: block;
     color: white;
     text-align: center;
     padding: 5px;
     margin-right: 5px;
 }
-.topnav a:hover {
+
+.menu a:hover {
     background-color: #ddd;
     color: black;
 }
+
 @media screen and (max-width: 600px) {
-    .topnav a {
-        float: top;
-        width: 100%;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu a {
+        width: 20%;
         margin: 3px;
     }
 }
 
-.header {
+.overhead {
     size: 300px;
     #max-width: fit-content;
     background-color: #363f44;
@@ -62,6 +68,8 @@ body {
     text-align: left;
     font-size: xx-large;
     color: #d9bf12;
+    text-decoration: underline;
+    text-decoration-color: #949494;
 }
 
 .article p {
@@ -71,8 +79,61 @@ body {
 }
 
 .loginWindow {
-
+    margin: 20px auto;
+    width: 60%;
+    background-color: #735b5b;
+    padding: 5%;
+    opacity: 0.9;
 }
+
+.logo {
+    background-color: #16a085;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: #f3d959;
+}
+
+.form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.username, .password {
+    display: block;
+    border-radius: 30px;
+    border: 1px solid red;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.username input, .password input {
+    width: 100%;
+}
+
+.button_sign_in {
+    width: 100%;
+}
+
 
 .importantMSG {
     font-size: large;
